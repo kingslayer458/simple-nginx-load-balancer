@@ -1,21 +1,21 @@
 services:
   server1:
     build: ./app1
-    container_name: fastapi1
+    # container_name: fastapi1
     # ports:
     #   - "8001:8000"
     expose:
       - "8000"
   server2:
     build: ./app2
-    container_name: fastapi2
+    # container_name: fastapi2
     # ports:
     #   - "8002:8000"
     expose:
       - "8000"
   server3:
     build: ./app3
-    container_name: fastapi3
+    # container_name: fastapi3
     # ports:
     #   - "8003:8000"
     expose:
