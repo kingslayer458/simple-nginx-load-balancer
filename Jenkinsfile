@@ -4,10 +4,10 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                withCredentials([string(credentialsId: 'nigger-ip', variable: 'nigger-ip')]) {
+                withCredentials([string(credentialsId: 'niggerip', variable: 'niggerip')]) {
                     sshagent(['nigger']) {
                         sh '''
-                        ssh -o StrictHostKeyChecking=no ubuntu@$nigger-ip "
+                        ssh -o StrictHostKeyChecking=no ubuntu@$niggerip "
                             cd /home/mrlightsail/simple-nginx-load-balancer &&
 
                             echo '[+] Deploying...' &&
