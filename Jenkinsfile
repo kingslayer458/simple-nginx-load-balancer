@@ -7,7 +7,7 @@ pipeline {
                 withCredentials([string(credentialsId: 'niggerip', variable: 'niggerip')]) {
                     sshagent(['nigger']) {
                         sh '''
-                        ssh -o StrictHostKeyChecking=no ubuntu@$niggerip "
+                        ssh -o StrictHostKeyChecking=no nigger@$niggerip "
                             cd /home/mrlightsail/simple-nginx-load-balancer &&
 
                             echo '[+] Deploying...' &&
